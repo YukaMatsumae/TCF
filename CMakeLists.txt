@@ -13,6 +13,9 @@ find_package(PCL 1.12 REQUIRED)
 set(PCL_INCLUDE_DIRS /usr/local/include/pcl-1.12)
 # find_package(PCL REQUIRED)
 include_directories(${PCL_INCLUDE_DIRS})
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/registration
+)
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
